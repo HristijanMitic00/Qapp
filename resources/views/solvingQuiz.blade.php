@@ -41,7 +41,7 @@
                     <li>{{$maQ->text}}</li>
                 </h5>
                 <div style="margin: 10px">
-                    <p style="display: inline">{{$maQ->answer1}}<span style="margin-left: 10px">-------</span></p>
+                    <p style="display: inline">{{$maQ->answer1}}<span style="margin-left: 10px">-></span></p>
                     @foreach($matches as $mat)
                         @if($mat->contains($maQ->id))
                             <select id="match.{{$maQ->id}}.{{$maQ->answer1}}"
@@ -57,7 +57,7 @@
                 @endif
             @endforeach
             <div style="margin: 10px">
-                <p style="display: inline">{{$maQ->answer2}}<span style="margin-left: 10px">-------</span></p>
+                <p style="display: inline">{{$maQ->answer2}}<span style="margin-left: 10px">-></span></p>
                 @foreach($matches as $mat)
                     @if($mat->contains($maQ->id))
                         <select id="match.{{$maQ->id}}.{{$maQ->answer2}}" name="match.{{$maQ->id}}.{{$maQ->answer2}}"
@@ -73,7 +73,7 @@
             @endif
             @endforeach
             <div style="margin: 10px">
-                <p style="display: inline">{{$maQ->answer3}}<span style="margin-left: 10px">-------</span></p>
+                <p style="display: inline">{{$maQ->answer3}}<span style="margin-left: 10px">-></span></p>
                 @foreach($matches as $mat)
                     @if($mat->contains($maQ->id))
                         <select id="match.{{$maQ->id}}.{{$maQ->answer3}}" name="match.{{$maQ->id}}.{{$maQ->answer3}}"
@@ -89,7 +89,7 @@
             @endif
             @endforeach
             <div style="margin: 10px">
-                <p style="display: inline">{{$maQ->answer4}}<span style="margin-left: 10px">-------</span></p>
+                <p style="display: inline">{{$maQ->answer4}}<span style="margin-left: 10px">-></span></p>
                 @foreach($matches as $mat)
                     @if($mat->contains($maQ->id))
                         <select id="match.{{$maQ->id}}.{{$maQ->answer4}}" name="match.{{$maQ->id}}.{{$maQ->answer4}}"
